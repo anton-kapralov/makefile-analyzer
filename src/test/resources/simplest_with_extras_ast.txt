@@ -1,0 +1,26 @@
+File
+  rule
+    target
+      id{all}
+      punctuation{:}
+      dep_list
+        id{hello}
+  rule
+    target
+      id{hello}
+      punctuation{:}
+      dep_list
+        id{main.o, general.o, a, b}
+    command{g++  main.o -o hello}
+  rule
+    target
+      id{main.o}
+      punctuation{:}
+      dep_list
+        id{main.cpp}
+    command{g++ -c main.cpp}
+  rule
+    target
+      id{clean}
+      punctuation{:}
+    command{rm *o hello}
