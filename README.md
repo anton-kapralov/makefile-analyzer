@@ -1,2 +1,3 @@
-# makefile-analyzer
-Demo project for analysing C makefile using Java 
+# Makefile Analyzer
+
+Demo project for analysing C makefile using Java.
